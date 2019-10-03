@@ -96,7 +96,7 @@ man.dispose();//fechar a tela da manutenção
             linha.add(objeto.getCodigo());
             linha.add(objeto.getNomefantasia());
             linha.add(objeto.getRazaosocial());
-            linha.add(objeto.getFundacao());
+            linha.add(objeto.getFundacao().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
             linha.add(objeto.getNrfuncionarios());
             linha.add(objeto.getValorbolsa());
             modelo.addRow(linha); //adicionando a linha na tabela
